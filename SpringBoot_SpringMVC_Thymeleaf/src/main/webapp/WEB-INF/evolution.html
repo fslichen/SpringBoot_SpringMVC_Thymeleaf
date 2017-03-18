@@ -1,0 +1,22 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+	<div>
+		<a href="#" th:text="${param.message}">...</a>
+		<a href="#" th:text="${message}">...</a>
+		<a href="#" th:text="${session.message}">...</a>
+		<form method="POST" enctype="multipart/form-data"
+			action="http://localhost:8080/upload">
+			<table>
+				<tr>
+					<td>File to upload:</td>
+					<td><input type="file" name="file" /></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="submit" value="Upload" /></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>
